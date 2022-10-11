@@ -6,6 +6,10 @@ using UnityEngine.UI;
 
 public class MainManager : MonoBehaviour
 {
+    /*public static MainManager Instance; //Declares and instance of this object as static
+    public string playerName; //holds the player's name
+    public int highScore; //holds the highest score*/
+
     public Brick BrickPrefab;
     public int LineCount = 6;
     public Rigidbody Ball;
@@ -18,7 +22,18 @@ public class MainManager : MonoBehaviour
     
     private bool m_GameOver = false;
 
-    
+    /*public void Awake() //Makes this instance of the main manager to prevail in other scenes
+    {
+        if(Instance != null)
+        {
+            Destroy(gameObject);
+            return;
+        }
+
+        Instance = this;
+        DontDestroyOnLoad(gameObject);
+    }*/
+
     // Start is called before the first frame update
     void Start()
     {
